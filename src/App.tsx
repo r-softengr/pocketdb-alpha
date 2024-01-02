@@ -11,9 +11,7 @@ function App() {
     const data = {
       content: postData,
     };
-    console.log(data);
-    const record = await pb.collection("entries").create(data);
-    console.log(record);
+    await pb.collection("entries").create(data);
   };
 
   useEffect(() => {
