@@ -1,6 +1,6 @@
 import PocketBase from "pocketbase";
 const usePocketBase = () => {
-  const pocketBase = new PocketBase(process.env.POCKETDB_BASE);
+  const pocketBase = new PocketBase(import.meta.env.POCKETDB_BASE);
 
   return pocketBase;
 };
