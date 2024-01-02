@@ -1,6 +1,6 @@
 import PocketBase from "pocketbase";
 const usePocketBase = () => {
-  const pocketBase = new PocketBase(import.meta.env.POCKETDB_BASE);
+  const pocketBase = new PocketBase("https://alpha-pocketdb.pockethost.io/");
 
   return pocketBase;
 };
