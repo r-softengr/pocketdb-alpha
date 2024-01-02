@@ -15,6 +15,10 @@ function App() {
   };
 
   useEffect(() => {
+    console.log(
+      "import.meta.env.VITE_POCKETDBBASE: ",
+      import.meta.env.VITE_POCKETDBBASE
+    );
     const fetchEntries = async () => {
       const response = await pb.collection("entries").getFullList({
         sort: "-created",
